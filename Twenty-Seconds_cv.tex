@@ -1,146 +1,160 @@
-\documentclass[]{twentysecondcv}
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Mouad Zaid} % Your name
+\cvjobtitle{Ingénieur en informatique industrielle.\\ \normalsize \\18 rue du Château, \\92500, Rueil Malmaison.\\ \\Mobilité: île de France, Permis B.} % Job title/career
+
+\cvlinkedin{https://www.linkedin.com/in/mouad-zaid-590/}
+\cvnumberphone{06 50 56 17 83} % Phone number
+\cvsite{https://xmoad.github.io/} % Personal website
+\cvmail{mouad.zaid@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
-dfdfdf
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
+\makeprofile % Print the sidebar
 
-\profilepic{alice.jpeg} %path of profile pic
-\cvname{Alice} %your name
-\cvjobtitle{Adventurer}%your actual job position
-\cvdate{26 November 1865}%date of birth
-\cvaddress{United Kingdom}%address
-\cvnumberphone{+39 0325658974}%telphone number
-\cvmail{alice@wonderland.com}%e-mail
-\cvsite{http://en.wikipedia.org}%personal site
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Formations}
 
-
-\aboutme{
-Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.}%About me section
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{lovely/4},{narcissistic/3}}
-
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{interests}
-The heroine and the dreamer of Wonderland;  Alice is the principal character.
-
-\section{education}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {since 1865}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {Wonderland}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \twentyitem
-    {1863-1865}
-    {M.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1861-1863}
-    {B.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1856-1861}
-    {High school}
-    {Wonderland}
-    {Specializing in mathematics and physics.}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2015 - 2016}
+        {Master en apprentissage, Ingénierie de l'informatique industrielle}
+        {\href{http://www.upmc.fr/fr/universite.html}{CFA UPMC, Université de Pierre et Marie Curie, Sorbonne Universités.}}
+        {Entreprise: Peugeot Sport}
+        {}
+	\twentyitem
+    	{2014 - 2015}
+        {Maîtrise en apprentissage, Ingénierie de l'informatique industrielle}
+        {\href{http://www.upmc.fr/fr/universite.html}{CFA UPMC, Université de Pierre et Marie Curie, Sorbonne Universités.}}
+        {Entreprise: Peugeot Sport}
+        {}
+	\twentyitem
+    	{2010 - 2012}
+        {DUT en Génie électrique et informatique industrielle}
+        {\href{http://www.iut-cachan.u-psud.fr/fr/index.html}{\\IUT de Cachan, Université Paris Sud XI.}}
+        {}
+        {}       
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
 \end{twenty}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{publications}
+% \section{Expériences professionnelles}
+% \begin{twenty}
+% 	\twentyitem
+%     	{2015 - 2016}
+%         {Ingénieur logiciel chez SERMA Ingénierie, pour RENAULT}
+%         {\href{http://www.uoguelph.ca/}{University of Guelph}}
+%         {}
+%         {
+%         {\begin{itemize}
+%         \item Worked on integrating large, noisy datasets containing upto six million records for predictive modeling and regression analyses
+%         \item Performed classification using Support Vector Machines and multivariate regression analyses using Logistic Regression
+%         \item A paper describing the integration methodology and preliminary results is accepted for publication at the DINA workshop in IEEE International Conference of Data Mining 2016 in Barcelona, Spain
+%     \end{itemize}}
+%         }
+% \end{twenty}
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1865}
-    {Chapter One, Down the Rabbit Hole.}
-  \twentyitemshort
-    {1865}
-    {Chapter Two, The Pool of Tears.}
-  \twentyitemshort
-    {1865}
-    {Chapter Three,  The Caucus Race and a Long Tale.}
-  \twentyitemshort
-    {1865}
-    {Chapter Four,  The Rabbit Sends a Little Bill.}
-  \twentyitemshort
-    {1865}
-    {Chapter Five,  Advice from a Caterpillar.}
-\end{twentyshort}
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
 
+\section{Expériences professionnelles}
 
-
-\section{awards}
-
-\begin{twentyshort}
-  \twentyitemshort
-    {1987}
-    {All-Time Best Fantasy Novel.}
-  \twentyitemshort
-    {1998}
-    {All-Time Best Fantasy Novel before 1990.}
-\end{twentyshort}
-
-
-\section{experience}
-
-\begin{twenty}
-  \twentyitem
-    {1900}
-    {Alice in Wonderland-The Circra (1900's) Silent Film.}
-    {Film}
-    {The first Alice on film was over a hundred years ago.}
-  \twentyitem
-    {1933}
-    {Alice in Wonderland 1933 version.}
-    {Film}
-    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-\twentyitem
-    {1951}
-    {Disney Film.}
-    {Film}
-    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
-
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{Nov 2016 - \\aujourd'hui}
+        {Ingénieur logiciel}
+        {\href{http://www.serma-ingenierie.com/}{SERMA, pour le compte de RENAULT.}}
+        {}
+        {
+        {\\ \textbf{Chargé de l'automatisation des tests multimédia.}
+        \begin{itemize}
+        \item Participation à l'élaboration des plans de validation et analyse de la faisabilité technique des use-cases.
+        \item Développement des outils, scripts et scénarios nécessaires pour le déroulement des tests.
+        \item Mentoring/support technique auprès des équipes en offshore (Review, règles de codage...) et vérification de la correction des bugs.
+        \item Validation des performances logicielles des systèmes multimédias et reporting auprès des pilotes projets.\\
+    
+    \end{itemize}}
+        }
+        
+    \twentyitem
+   		{Sept 2016 - \\Sept 2014 }
+        {Apprenti ingénieur d'études}
+        {\href{http://media.peugeot-sport.com/}{PSA Group, Peugeot Sport}}
+        {}
+        {
+        {\\ \textbf{Développement d'outils logiciels pour l'analyse de la performance.}
+        
+        \begin{itemize}
+        \item Modélisation et simulation d'un modèle thermodynamique pour la prédiction de la performance. 
+        \item Développement d'un code de calcul et d'une IHM pour l'analyse de la combustion Diesel.
+        \item Développement d'un code de calcul et d'une IHM pour l'analyse fréquentielle des ondes harmoniques. 
+    \end{itemize}}
+    
+        }
+        
+     \twentyitem
+   		{Oct 2015 - \\ Jan 2016}
+        {Projet de fin d'étude}
+        {\href{http://www.synechron.com/}{LabeX Univer'Earths, Université Sorbonne Paris Cité}}
+        {}
+        {\\ \textbf{Prototypage d'un ordinateur de bord temps réel pour nanosatellite.}
+        
+        \begin{itemize}
+        \item Portage d'un RToS -FreeRTOS-, sur une cible ARM7 par Cross-Compilation, dans un environnement Linux.
+        \item Développement des drivers associés (Serial, GPIO, SPI, i2C) pour g\'erer la communication avec les capteurs.
+       
+    \end{itemize}
+    	}    
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
-\section{other information}
-Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+
+\section{Langages et outils}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{\textbf{Langages}}{ ~~ C/C++, Matlab, Python, LabView, MySQL, Assembleur} 
+    \twentyitemshort{\textbf{Logiciels}}{ ~~ TestStand, Eclipse, GT-Power, CANoe.} 
+    \twentyitemshort{\textbf{Conception}}{ ~~ Merise, UML} 
+	\twentyitemshort{\textbf{Méthodologies}}{ ~~ Agile Scrum, familier avec l'intégration continue} 
+    \twentyitemshort{\textbf{OS}}{ ~~ Windows, GNU/Linux(Fedora, Debian, Ubuntu)} 
+     \twentyitemshort{\textbf{Divers}}{ ~~ SVNTortoise, Git, ArgoUML, Atlas, Wintax 4, \LaTeX} 
+	
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
 
 \end{document} 
+
